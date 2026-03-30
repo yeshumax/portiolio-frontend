@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e53166f.css",
-    "main.js": "/static/js/main.f7e71ae0.js",
-    "static/media/Image.png": "/static/media/Image.b94981eda953b87dffda.png",
-    "static/media/yeshumax.png": "/static/media/yeshumax.fb6a7190f0ea5cc2e1f7.png",
+    "main.css": "/static/css/main.bb943961.css",
+    "main.js": "/static/js/main.195b913a.js",
+    "static/media/yeshumax.png": "/static/media/yeshumax.d3d950e68cfcb3de3ab0.png",
+    "static/media/Image.png": "/static/media/Image.446265ea00aa1c19f83b.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.6e53166f.css",
-    "static/js/main.f7e71ae0.js"
+    "static/css/main.bb943961.css",
+    "static/js/main.195b913a.js"
   ]
 }
