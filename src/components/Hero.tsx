@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Image from '../assets/Image.png';
+
 const Hero: React.FC = () => {
   return (
     <div className="relative bg-white dark:bg-gray-900 overflow-hidden transition-colors duration-300">
@@ -64,20 +65,27 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Hero Visual */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="relative hidden lg:block"
-          >
-            <div className="relative w-full aspect-square max-w-lg mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-[3rem] transform rotate-3 scale-105 transition-transform hover:rotate-6 duration-700 z-0"></div>
-              <div className="absolute inset-0 bg-white dark:bg-gray-800 rounded-[3rem] shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden z-10 flex items-center justify-center">
-                <img src={Image} alt="YESHWOND" className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
-              </div>
+        {/* Hero Visual - With hover effect, still fully visible */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="relative hidden lg:flex lg:justify-center lg:items-center"
+        >
+          <div className="relative w-full max-w-md mx-auto group">
+            {/* Decorative rotating background */}
+            <div className="absolute -inset-4 bg-gradient-to-tr from-blue-100 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-[3rem] transform rotate-3 transition-transform duration-700 group-hover:rotate-6"></div>
+            
+            {/* Image container with scale effect on hover */}
+            <div className="relative bg-white dark:bg-gray-800 rounded-[3rem] shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden transition-transform duration-500 group-hover:scale-105">
+              <img 
+                src={Image} 
+                alt="YESHWOND" 
+                className="w-full h-auto block"
+              />
             </div>
-          </motion.div>
+          </div>
+        </motion.div>
         </div>
       </div>
     </div>
