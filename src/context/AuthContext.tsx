@@ -10,6 +10,7 @@ interface User {
   isBlocked?: boolean;
   isActive?: boolean;
   isEmailVerified?: boolean;
+  requiresApproval?: boolean;
   lastLoginAt?: string;
   createdAt?: string;
   updatedAt?: string;
